@@ -4,3 +4,21 @@ body {
     font-family: Arial;
     text-align: align left;
 }
+
+h1 {
+    text-align: center;
+}
+
+
+/* VIDEO GALLERY */
+.video-gallery {  
+    display: grid;  
+    grid-template-columns: repeat(5, 1fr);  
+    gap: 15px;  
+    padding: 20px;  
+}  
+
+.video-gallery video {  
+    width: 100%;  
+    height: auto;  
+}
