@@ -1,16 +1,26 @@
 body {
-    background-color: blue;
-    color: white;
-    font-family: Arial;
-    text-align: align left;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
 h1 {
     text-align: center;
 }
 
+/* ===============================
+   HEADER STYLES
+   =============================== */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-/* VIDEO GALLERY */
+/* ===============================
+   VIDEO GALLERY
+   =============================== */
 .video-gallery {  
     display: grid;  
     grid-template-columns: repeat(5, 1fr);  
@@ -19,6 +29,35 @@ h1 {
 }  
 
 .video-gallery video {  
-    width: 640;  
-    height: 480;  
+    width: 100%;   /* changed from 640 for responsiveness */
+    height: auto;  /* maintain aspect ratio */
+}
+
+/* ===============================
+   OPTIONAL: CARD OR BUTTON STYLES
+   =============================== */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
